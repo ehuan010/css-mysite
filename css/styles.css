@@ -1,0 +1,192 @@
+/*  element(eg. paragraph), padding, border, margin
+viewport: the screen you are viewing webpage on
+changing width/height of div pushes other elements
+use pixels or percent
+solid border has 3px border around element; 50px border-width
+means that you have an addition 50px border around 200x200 div
+border-width: 0px 10px 20px 30px (circle shorthand starting at top clockwise)
+{padding:20px} adds padding to the element inside the div
+{margin:10px} is the buffer zone b/t current element and any others onscreen*/
+body {
+  margin: 0;
+  /*top, right, bot, left -auto centers it */
+  text-align: center;
+  /*centers everything (need to use in parent) works on inline-block and block elements*/
+  /*changing width: property will fuck up center alignment so use margin to fix it*/
+  font-family: 'Merriweather', serif;
+  /*from google fonts*/
+}
+
+h1 {
+  /*If you erase default margins in chrome dev tools
+  you can see the correct property and value that you
+  want to change (CSS Box Model) */
+  margin: 50px auto 0 auto;
+  /*top, right, bot, left -auto centers it */
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625em;
+  /*for fonts 16px=100%=1em pixel is fixed, % and em scales dynamically with
+  your browser settings
+  font size is inherited from parent(additively) for dynamic sizes %,em
+  recommended to use rem(root em) to ignore parent font-size property
+  */
+  color: #66BFBF;
+  /*line-height: 2;*/
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  /*40px = (40/16px)= 2.5rem*/
+  font-size: 2.5rem;
+  color: #66BFBF;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+hr {
+  border-style: dotted none none none;
+  border-top-color: #EAF6F6;
+  border-top-width: 8px;
+  width: 5%;
+  margin: 100px auto;
+}
+p {
+  color: #40514E;
+  line-height: 2;
+}
+
+.subtitle {
+  /*font-weight: normal;*/
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.top-container {
+  background-color: #E3FDFD;
+  position: relative;
+  padding-top: 100px;
+  /*Display property: block, inline, inline-block,none
+  -allows you to change an elements property so that you cha
+  modify it more easily
+  -block: whole line
+  -inline: next to each other/same line
+  -inline-block: can edit-width like a block and is still in the same line
+  -none: disappears from flow
+  visibility property: hidden (keeps it in the html flow, but it's blank)
+  */
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px; /*covers bottom whitespace that paragraph for copyright
+  created*/
+}
+
+.linkedin-link {
+  margin-top: 80px;
+}
+
+.twitter-link {
+  margin-top: 20px;
+}
+
+.website-link {
+  margin-top: 20px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro {
+  width: 30%;
+  margin: auto; /*re-centers it*/
+}
+
+.contact-message {
+  width: 30%;
+  margin: 40px auto 60px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 20%;
+  top: 10%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 20%;
+  bottom: 40%;
+}
+
+.cat {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.laptop-img {
+  border-radius: 50%;
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.chillies-img {
+  border-radius: 50%;
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.myButton {
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+  font-family: 'Montserrat', sans-serif;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

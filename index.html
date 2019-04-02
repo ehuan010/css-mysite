@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Edward Huang</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- this allows computers w/o this font to go to the address and be able to use it-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+  <!--font is being embedded to page instead of assuming people's system already have it-->
+</head>
+
+<body>
+  <!--div splits up sections of your page. starts with no height
+      and is affected by css. elements inside affect its height-->
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="Picture of a cloud">
+    <h1>Edward Huang</h1>
+      <!--span element for selecting one section(highlighting)
+      does nothing without CSS; is an inline display element in contrast to
+    block elements that take up an entire width of the page
+  -only takes up as much sapce height and width as it needs
+  -downside: can't change width of inline elements, can with blocks
+    -->
+      <h2 class="subtitle">a <span class="pro">pro</span>grammer</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="Picture of a cloud">
+    <img src="images/mountain.png" alt="mountain-img">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img class="cat" src="https://devblogs.nvidia.com/wp-content/uploads/2016/07/cute.jpg" alt="Picture of Edward">
+      <h2>Hello.</h2>
+      <p class="intro">I am an aspiring Web Developer. I'm learning Information Technology. I like to read books and watch anime.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="laptop-img" src="images/computer.png" alt="Pic of computer">
+        <h3>Design and Development</h3>
+        <p>I started coding when I was 17 years old because I was fascinated by computers. I wanted to understand how they work.
+        I learned how to program embedded systems and develop various applications.</p>
+      </div>
+      <div class="skill-row">
+        <img class="chillies-img" src="https://media.giphy.com/media/zziTG26FGM0Lu/giphy.gif" alt="Pic of chillies">
+        <h3>Pwning Noobs</h3>
+        <p>But my best skill is pwning noobs in LoL.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you want to discuss ways to overcome game addiction.</h3>
+      <p class="contact-message">Addicted to video games? Let's discuss ways to quit or moderate it! We can learn to code while we're at it!</p>
+<a class="myButton" href="mailto:edwardhuang1256@gmail.com">Contact Me</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="linkedin-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="twitter-link" href="https://twitter.com/">Twitter</a>
+    <a class="website-link" href="https://www.appbrewery.co/">Website</a>
+    <p class="copyright">© 2018 Edward Huang</p>
+  </div>
+
+</body>
+
+</html>
